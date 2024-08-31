@@ -66,13 +66,15 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+        
+    - family: GT Sectra Fine Regular
+      fonts:
+        - asset: assets/fonts/GT Sectra Fine Regular.ttf
+
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy-Bold.ttf
+  # To use custom fonts in your application, add a FontsManifest entry  
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
