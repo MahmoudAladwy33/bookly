@@ -32,7 +32,8 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: ^10.7.0
-  get: ^4.6.6
+  
+  go_router: ^14.2.7
   google_fonts: ^6.2.1
 
 dev_dependencies:
@@ -66,7 +67,7 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
-        
+
     - family: GT Sectra Fine Regular
       fonts:
         - asset: assets/fonts/GT Sectra Fine Regular.ttf
@@ -74,7 +75,7 @@ flutter:
     - family: Gilroy
       fonts:
         - asset: assets/fonts/Gilroy-Bold.ttf
-  # To use custom fonts in your application, add a FontsManifest entry  
+  # To use custom fonts in your application, add a FontsManifest entry
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
