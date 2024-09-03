@@ -18,7 +18,8 @@ class CustomSkeletonizer extends StatelessWidget {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: CustomBookImage(
-                imageUrl: 'assets/images/test_image.png',
+                imageUrl:
+                    'https://books.google.com/books/content?id=581CEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
               ),
             );
           },
