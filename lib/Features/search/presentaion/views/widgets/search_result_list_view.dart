@@ -1,4 +1,4 @@
-import 'package:bookly/Features/home/presentaion/views/widgets/book_list_view_item.dart';
+import 'package:bookly/Features/home/presentaion/views/widgets/newest_books_skeleton_list.dart';
 import 'package:flutter/material.dart';
 
 class SearchResultListView extends StatelessWidget {
@@ -11,7 +11,7 @@ class SearchResultListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.symmetric(vertical: 10),
-          child: BookListViewItem(),
+          child: NewestBooksSkeletonizerList(),
         );
       },
     );

@@ -2,8 +2,8 @@ import 'package:bookly/Features/home/presentaion/views/widgets/custom_book_image
 import 'package:flutter/material.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
-class CustomSkeletonizer extends StatelessWidget {
-  const CustomSkeletonizer({super.key});
+class FeaturedBooksSkeleton extends StatelessWidget {
+  const FeaturedBooksSkeleton({super.key});
 
   @override
   Widget build(BuildContext context) {
