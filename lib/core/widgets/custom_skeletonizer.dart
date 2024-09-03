@@ -17,7 +17,9 @@ class CustomSkeletonizer extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageUrl: 'assets/images/test_image.png',
+              ),
             );
           },
         ),
