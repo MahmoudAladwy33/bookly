@@ -1,4 +1,4 @@
-import 'package:bookly/Features/home/presentaion/views/widgets/newest_books_skeleton_list.dart';
+import 'package:bookly/Features/home/presentaion/views/widgets/skeletonizer/newest_books_skeleton_list.dart';
 import 'package:flutter/material.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 

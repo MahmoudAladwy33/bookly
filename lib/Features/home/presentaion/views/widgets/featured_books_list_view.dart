@@ -2,7 +2,7 @@ import 'package:bookly/Features/home/presentaion/manger/featured_books_cubit/fea
 import 'package:bookly/Features/home/presentaion/views/widgets/custom_book_image.dart';
 import 'package:bookly/core/utils/app_router.dart';
 import 'package:bookly/core/widgets/custom_error_widget.dart';
-import 'package:bookly/Features/home/presentaion/views/widgets/featured_books_%20skeletonizer.dart';
+import 'package:bookly/Features/home/presentaion/views/widgets/skeletonizer/featured_books_%20skeletonizer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
