@@ -24,7 +24,7 @@ class HomeRepoImpl implements HomeRepo {
     } catch (e) {
       if (e is DioException) {
         return left(
-          ServerFailure.fromDioError(e),
+          ServerFailure.fromDioException(e),
         );
       }
       return left(
@@ -39,8 +39,7 @@ class HomeRepoImpl implements HomeRepo {
   Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
       var data = await apiService.get(
-          endPoint:
-              'volumes?&filtering=free_ebooks&Sorting=Newst&q=subject:flutter');
+          endPoint: 'volumes?&filtering=free_ebooks&Sorting=Newst&q=flutter');
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(
@@ -51,7 +50,7 @@ class HomeRepoImpl implements HomeRepo {
     } catch (e) {
       if (e is DioException) {
         return left(
-          ServerFailure.fromDioError(e),
+          ServerFailure.fromDioException(e),
         );
       }
       return left(
