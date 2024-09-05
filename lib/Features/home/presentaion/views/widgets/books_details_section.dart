@@ -6,8 +6,8 @@ import 'package:bookly/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsSection extends StatelessWidget {
-  const BookDetailsSection({super.key, required this.bookModel});
-  final BookModel bookModel;
+  const BookDetailsSection({super.key, required this.book});
+  final BookModel book;
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -16,7 +16,7 @@ class BookDetailsSection extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .2),
           child: CustomBookImage(
-            imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ??
+            imageUrl: book.volumeInfo.imageLinks?.thumbnail ??
                 ' https://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
           ),
         ),
@@ -24,7 +24,7 @@ class BookDetailsSection extends StatelessWidget {
           height: 43,
         ),
         Text(
-          bookModel.volumeInfo.title!,
+          book.volumeInfo.title!,
           style: Styles.textStyle30.copyWith(
             fontWeight: FontWeight.bold,
           ),
@@ -36,7 +36,7 @@ class BookDetailsSection extends StatelessWidget {
         Opacity(
           opacity: .7,
           child: Text(
-            bookModel.volumeInfo.authors![0],
+            book.volumeInfo.authors![0],
             style: Styles.textStyle18.copyWith(
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w500,
@@ -47,13 +47,15 @@ class BookDetailsSection extends StatelessWidget {
           height: 18,
         ),
         BookRating(
-          count: bookModel.volumeInfo.pageCount!,
+          count: book.volumeInfo.pageCount!,
           mainAxisAlignment: MainAxisAlignment.center,
         ),
         const SizedBox(
           height: 37,
         ),
-        const BooksAction(),
+        BooksAction(
+          bookModel: book,
+        ),
       ],
     );
   }
